@@ -3,61 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <title>Rock, Paper, Scissor</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script>
+  <div id="topBar">
 
+  </div>
+  <div class="myColumns">
 
+    <div class="column">
+      <h1 style="margin-top: 32px;">You</h1>
+      <!-- <div class="pointsContainerA">
+        <div class="bluePoint"></div>
+        <div class="defaultPoint"></div>
+        <div class="defaultPoint"></div>
+        <div class="defaultPoint"></div>
+        <div class="defaultPoint"></div>
+      </div> -->
+      <div class="divider"></div>
+      <h1 style="font-size: 18px;">Make a Pick</h1>
+      <div class="selectorArea">
+        <button id="rock" class="rockBtn">Rock</button>
+        <button id="paper" class="paperBtn">Paper</button>
+        <button id="scissor" class="scissorBtn">Scissor</button>
+      </div>
+    </div>
 
-    let playerChoice;
-    let computerChoice;
-    let roundWinner;
-    
-    function getPlayerChoice() {
-      playerChoice = prompt()
-      playerChoice = playerChoice.toLowerCase()
-      return playerChoice;
-    }
+    <div class="column">
+      <div id="logoContainer">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <h1 id="currentScore" style="margin-top: 32px;"></h1>
+      <div class="resultBox">
+        <p class="resultLabel">Result Goes Here!</p>
+      </div>
+    </div>
 
-    function getComputerChoice() {
-      let value = Math.random()
-      if (value < .33) {
-        return computerChoice = "rock";
-      } else if (value > .66) {
-        return computerChoice = "paper";
-      } else {
-        return computerChoice = "scissor";
-      }
-    }
+    <div class="column">
+      <h1 style="margin-top: 32px;">Computer</h1>
+      <!-- <div class="pointsContainerB">
+        <div class="redPoint"></div>
+        <div class="defaultPoint"></div>
+        <div class="defaultPoint"></div>
+        <div class="defaultPoint"></div>
+        <div class="defaultPoint"></div>
+      </div> -->
+      <div class="divider"></div>
+      <h1 style="font-size: 18px;">Computer Pick</h1>
+      <div class="selectorArea">
+        <div class="computerArea">
+          <p class="compChoice">Computer Choice!</p>
+        </div>
+      </div>
+    </div>
 
-    function pickWinner(computer, player) {
-      if (computer === "rock" && player === "paper") {
-        return roundWinner = "You win! Paper beats Rock!";
-      } else if (computer === "rock" && player === "scissor") {
-        return roundWinner = "You lose! Rock beats Scissor!";
-      } else if (computer === "scissor" && player === "paper") {
-        return roundWinner = "You lose! Scissor beats Paper!";
-      } else if (computer === "scissor" && player === "rock") {
-        return roundWinner = "You win! Rock beats Scissor!";
-      } else if (computer === "paper" && player === "scissor") {
-        return roundWinner = "You win! Scissor beats Paper!";
-      } else if (computer === "paper" && player === "rock") {
-        return roundWinner = "You lose! Paper beats Rock!";
-      } else if (computer === player) {
-        return roundWinner = "This round is a tie...";
-      }
-    }
-
-    function playRound () {
-    getPlayerChoice();
-    getComputerChoice();
-    console.log(pickWinner (computerChoice, playerChoice));
-    }
-
-    for (let i = 0; i < 5; i++) {
-      playRound();
-    }
-
-  </script>
+  </div>
 </body>
 </html>

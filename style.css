@@ -1,0 +1,196 @@
+h5 {
+    outline: red 1pt solid;
+}
+
+body {
+    background-color: #FCFDFF;
+    margin: 0px;
+}
+
+button {
+    height: 70px;
+    border-radius: 10px;
+    width: 396px;
+    background-color: #7A8CA0;
+    margin-bottom: 22px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #dbe1e7;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+h1 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #486484;
+}
+
+p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #486484;
+}
+
+#topBar {
+    height: 120px;
+    background-color: #D6DCE3;
+    z-index: -1000;
+}
+
+#logoContainer {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.myColumns {
+    display: flex;
+    width: 1207px;
+    height: 500px;
+    margin: auto;
+    margin-top: -120px;
+    justify-content: space-between;
+}
+
+.column {
+    height: 100%;
+    width: 396px;
+}
+
+.pointsContainerA {
+    width: 304px;
+    margin: auto;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+}
+
+.pointsContainerB {
+    width: 304px;
+    margin: auto;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.defaultPoint {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #F3F6F9;
+    border: 1px solid #C2CCD8;
+}
+
+.bluePoint {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #0C5BB8;
+    border: 1px solid #C2CCD8;
+}
+
+.redPoint {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #A81010;
+    border: 1px solid #C2CCD8;
+}
+
+.divider {
+    background-color:#F3F6F9;
+    width: 396px;
+    height: 3px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.selectorArea {
+    margin-top: 32px;
+    width: 396px;
+    height: 300px;
+    margin: auto;
+}
+
+.computerArea {
+    background: #D6DCE3;
+    border-radius: 10px;
+    height: 254px;
+}
+
+.resultBox {
+    background-color: #f3f6f9;
+    border: #D6DCE3 solid 3px;
+    width: 144px;
+    height: 144px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.resultLabel {
+    font-size: 14px; 
+    margin-top: 32px; 
+    margin-left: 16px; 
+    margin-right: 16px; 
+    line-height: 20px;
+}
+
+.winLabel {
+    color: #0f45a9;
+    font-size: 14px; 
+    margin-top: 32px; 
+    margin-left: 16px; 
+    margin-right: 16px; 
+    line-height: 20px;
+}
+
+.winBox {
+    background-color: #e4edff;
+    border: #0f45a9 solid 3px;
+    width: 144px;
+    height: 144px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.lossLabel {
+    color: #A81010;
+    font-size: 14px; 
+    margin-top: 32px; 
+    margin-left: 16px; 
+    margin-right: 16px; 
+    line-height: 20px;
+}
+
+.lossBox {
+    background-color: #feefef;
+    border: #A81010 solid 3px;
+    width: 144px;
+    height: 144px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.compChoice {
+    padding-top: 104px;
+}
+
+button:hover {
+    background-color: #495c72;
+    color: white;
+    scale: 1.03;
+}
